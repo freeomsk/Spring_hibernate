@@ -7,7 +7,6 @@ import hiber.service.UserService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import javax.persistence.NoResultException;
-import java.sql.SQLException;
 
 public class MainApp {
    public static void main(String[] args) {
@@ -41,7 +40,7 @@ public class MainApp {
       System.out.println(userService.getUserByCar("Nimbus", 1001));
       System.out.println("2. _____________________________________________");
 
-      // Нет такого пользователя с такой машиной
+      // Нет пользователя с такой машиной
       try {
          User notFoundUser = userService.getUserByCar("Broom", 90);
       } catch (NoResultException e) {
