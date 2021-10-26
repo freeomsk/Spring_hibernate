@@ -41,11 +41,11 @@ public class MainApp {
       System.out.println("2. _____________________________________________");
 
       // Нет пользователя с такой машиной
-      try {
-         User notFoundUser = userService.getUserByCar("Broom", 90);
+        try {
+           User notFoundUser = userService.getUserByCar("Broom", 90);
       } catch (NoResultException e) {
-         System.out.println("User not found");
-         System.out.println("3. _____________________________________________");
+           System.out.println("User not found");
+           System.out.println("3. _____________________________________________");
       }
 
       context.close();
