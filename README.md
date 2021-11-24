@@ -1,4 +1,4 @@
-# JM preproject. Practical task 2.2.1 (ORM)
+# Spring + Hibernate (ORM)
 
 ## Условие:
 
